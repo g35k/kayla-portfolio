@@ -1,0 +1,262 @@
+.about {
+  padding-block: 2.5rem 5rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.about-sage-blob,
+.about-sage-blob2,
+.about-sage-blob3 {
+  position: absolute;
+  width: 420px;
+  height: 380px;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    #4c956c 0%,
+    #3a7a58 40%,
+    transparent 72%
+  );
+  border-radius: 55% 45% 60% 40% / 48% 55% 45% 52%;
+  filter: blur(60px);
+  opacity: 0.32;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-sage-blob {
+  top: 0;
+  left: -350px;
+}
+
+.about-sage-blob2 {
+  top: 1400px;
+  left: 15%;
+}
+
+.about-sage-blob3 {
+  top: 600px;
+  right: -250px;
+}
+
+/* Keep page content above the decorative blobs */
+.about > *:not(.about-sage-blob):not(.about-sage-blob2):not(.about-sage-blob3) {
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+
+/* Bio */
+.about-bio {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 3.5rem;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.bio-greeting {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.bio-text p {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.75;
+  max-width: 580px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.25rem;
+  padding: 0.38rem 1rem;
+  border: 1.5px solid var(--ink-muted);
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  align-self: flex-start;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.resume-btn:hover {
+  background: var(--forest);
+  color: var(--white);
+  border-color: var(--forest);
+}
+
+/* Photo carousel, 70% larger than original 200px = ~340px */
+.about-carousel-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.about-carousel {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--sage);
+  flex-shrink: 0;
+}
+
+.about-carousel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.about-carousel img.visible {
+  opacity: 1;
+}
+
+.about-carousel-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.abt-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition);
+}
+
+.abt-dot.active { background: var(--forest); }
+
+/* Section label */
+.section-label {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+/* Timeline: cards stagger above and below one line */
+.timeline-section { margin-bottom: 3.5rem; }
+.timeline-scroll   { overflow-x: auto; }
+
+.timeline-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--n, 8), minmax(0, 1fr));
+  grid-template-rows: auto 20px auto;
+  min-width: 820px;
+  padding: 0.5rem 3rem;
+}
+
+.timeline-item {
+  position: relative;
+  z-index: 1;
+  grid-row: 1 / span 3;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: subgrid; /* every dot lands on the same line */
+}
+
+/* the line, drawn one column at a time */
+.timeline-item::before {
+  content: "";
+  grid-row: 2;
+  grid-column: 1;
+  align-self: center;
+  height: 1.5px;
+  background: var(--sage);
+  opacity: 0.4;
+}
+
+.timeline-dot {
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid var(--sage);
+  z-index: 2;
+}
+
+.timeline-box {
+  grid-column: 1;
+  justify-self: center;
+  width: 120px;
+  background: #fefed4;   /* pale yellow */
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.7rem;
+  text-align: center;
+}
+
+.timeline-item.above .timeline-box { grid-row: 1; align-self: end;   margin-bottom: 0.6rem; }
+.timeline-item.below .timeline-box { grid-row: 3; align-self: start; margin-top: 0.6rem; }
+
+.timeline-date {
+  display: block;
+  font-size: 0.67rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-label {
+  font-size: 0.7rem;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* Fun facts */
+.facts-section { margin-bottom: 2rem; }
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.fact-item {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  max-width: 300px;
+}
+
+
+
+@media (max-width: 780px) {
+  .about-bio { grid-template-columns: 1fr; }
+  .about-carousel { width: 240px; height: 240px; }
+}

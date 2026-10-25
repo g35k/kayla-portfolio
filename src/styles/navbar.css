@@ -1,0 +1,68 @@
+.navbar {
+    padding-block: 1rem;
+  }
+  
+  .navbar-inner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* always top-right */
+  }
+  
+  /* when logo is present, push pills to the right */
+  .navbar-inner-wrap.has-logo {
+    justify-content: space-between;
+  }
+  
+
+  .navbar-logo {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.025em;
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  
+  .navbar-logo:hover {
+    color: var(--forest);
+  }
+  
+  .navbar-logo:focus-visible {
+    outline: 2px solid var(--forest);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+  
+  
+  .nav-pills {
+    display: flex;
+    gap: 0.55rem;
+    align-items: center;
+  }
+  
+  .nav-pill {
+    display: inline-block;
+    padding: 0.32rem 1rem;
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    transition: background var(--transition), color var(--transition), border-color var(--transition);
+  }
+  
+  .nav-pill:hover,
+  .nav-pill.active {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: var(--white);
+  }
+  
+  @media (max-width: 480px) {
+    .nav-pills { gap: 0.35rem; }
+    .nav-pill  { padding: 0.28rem 0.7rem; font-size: 0.72rem; }
+  }
