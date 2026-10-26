@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           <div className="hero-portrait">
-            <img src="/assets/headshot.jpg" alt="Kayla Garibay" />
+            <img src="/assets/headshot.png" alt="Kayla Garibay" />
           </div>
         </div>
       </section>

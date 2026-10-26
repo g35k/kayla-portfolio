@@ -9,9 +9,9 @@ const caseStudies = [
     tags: ['Accessibility', 'Hardware', 'Learning'],
     summary: 'A hardware-integrated braille learning platform for visually impaired children, pairing a 3D-printed device and Raspberry Pi with a Flask backend and a React frontend with audio feedback. Built in 48 hours by a team of 7 at Hornet Hacks 4.0, it won 1st Place in Open Innovation.',
     images: [
-      '/assets/senso-4.jpg',
+      '/assets/senso-4.png',
       '/assets/senso-1.png',
-      '/assets/senso-2.jpg',
+      '/assets/senso-2.png',
       '/assets/senso-3.JPG',
       '/assets/senso-5.png',
     ],
