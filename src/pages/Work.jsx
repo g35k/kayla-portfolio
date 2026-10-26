@@ -9,11 +9,11 @@ const caseStudies = [
     tags: ['Accessibility', 'Hardware', 'Learning'],
     summary: 'A hardware-integrated braille learning platform for visually impaired children, pairing a 3D-printed device and Raspberry Pi with a Flask backend and a React frontend with audio feedback. Built in 48 hours by a team of 7 at Hornet Hacks 4.0, it won 1st Place in Open Innovation.',
     images: [
-      '/assets/senso-4.png',
-      '/assets/senso-1.png',
-      '/assets/senso-2.png',
-      '/assets/senso-3.JPG',
-      '/assets/senso-5.png',
+      '/assets/senso-4.jpg',
+      '/assets/senso-1.jpg',
+      '/assets/senso-2.jpg',
+      '/assets/senso-3.jpg',
+      '/assets/senso-5.jpg',
     ],
     links: [
       { label: 'GitHub', href: 'https://github.com/g35k/senso' },
@@ -34,10 +34,10 @@ const caseStudies = [
     tags: ['Sustainability', 'Multicultural', 'Education'],
     summary: "A semester-long project from my study abroad at Yokohama National University, where my international class taught the Sustainable Development Goals to children at Gumyoji Daycare, fully in Japanese, through hands-on activities. Pre and post surveys showed a 60% increase in the children's SDG knowledge.",
     images: [
-      '/assets/sdg-1.JPG',
-      '/assets/sdg-2.JPG',
-      '/assets/sdg-3.JPG',
-      '/assets/sdg-4.JPG',
+      '/assets/sdg-1.jpg',
+      '/assets/sdg-2.jpg',
+      '/assets/sdg-3.jpg',
+      '/assets/sdg-4.jpg',
     ],
     sections: [
       { heading: 'Problem',        body: "Children at Gumyoji Daycare needed education on the SDGs. It matters to start in childhood so the goals stick, and Japan puts real emphasis on meeting its own SDG targets." },
@@ -54,10 +54,10 @@ const caseStudies = [
     tags: ['Sustainability', 'Education', 'Web'],
     summary: 'A student-run materials exchange that connects students with used textbooks and supplies to cut waste and cost. The frontend MVP was designed and shipped in 48 hours at Hornet Hacks 3.0 and won 1st Place in Sustainability.',
     images: [
-      '/assets/handitdown-2.png',
-      '/assets/handitdown-1.png',
+      '/assets/handitdown-2.jpg',
+      '/assets/handitdown-1.jpg',
       '/assets/handitdown-3.jpg',
-      '/assets/handitdown-4.JPG',
+      '/assets/handitdown-4.jpg',
     ],
     links: [
       { label: 'Live demo', href: 'https://handitdown.netlify.app/' },
@@ -79,10 +79,10 @@ const caseStudies = [
     tags: ['Health', 'App', 'Client'],
     summary: 'A client-based capstone app for a local pelvic floor physical therapist, replacing handwritten exercise slips with a scalable web and mobile platform. Therapists assign home exercise programs, patient progress is tracked in real time, and the app is released on the iOS App Store.',
     images: [
-      '/assets/floora-2.jpeg',
-      '/assets/floora-1.jpeg',
-      '/assets/floora-3.jpeg',
-      '/assets/floora-4.JPG',
+      '/assets/floora-2.jpg',
+      '/assets/floora-1.jpg',
+      '/assets/floora-3.jpg',
+      '/assets/floora-4.jpg',
     ],
     links: [
       { label: 'App Store', href: 'https://apps.apple.com/us/app/floora-hep/id6765753234' },
@@ -103,10 +103,10 @@ const caseStudies = [
     tags: ['Sustainability', 'Education', 'Interactive'],
     summary: 'An interactive, kid-friendly web app that teaches the UN Sustainable Development Goals through mini-games, short content, and a live leaderboard. Built at Hornet Hacks 2.0 with a React frontend and Django REST backend, and scoped to children in California.',
     images: [
-      '/assets/futurespark-4.JPG',
+      '/assets/futurespark-4.jpg',
       '/assets/futurespark-1.jpg',
       '/assets/futurespark-2.jpg',
-      '/assets/futurespark-3.JPG',
+      '/assets/futurespark-3.jpg',
     ],
     links: [
       { label: 'GitHub', href: 'https://github.com/isg28/FutureSparks' },

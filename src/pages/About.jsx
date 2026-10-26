@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import '../styles/about.css'
 
 const aboutImages = [
-  '/assets/abtme-1.JPG',
+  '/assets/abtme-1.jpg',
   '/assets/abtme-2.jpg',
-  '/assets/abtme-3.JPG',
-  '/assets/senso-3.JPG',
-  '/assets/abtme-4.JPG',
+  '/assets/abtme-3.jpg',
+  '/assets/senso-3.jpg',
+  '/assets/abtme-4.jpg',
 ]
 
 const timeline = [

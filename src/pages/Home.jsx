@@ -11,7 +11,7 @@ const projects = [
     hook: 'What if learning Braille could be more interactive and accessible?',
     summary:
       'Led a six-person team in developing a tactile learning device and companion web platform, from early concept to a competition-winning prototype.',
-    image: '/assets/senso-5.png',
+    image: '/assets/senso-5.jpg',
     imageAlt: 'Senso Braille learning system prototype',
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     hook: 'How can sustainability education connect students across cultures?',
     summary:
       'Led approximately 20 international students in planning and delivering three sustainability workshops for Japanese daycare students during an exchange at Yokohama National University.',
-    image: '/assets/sdg-3.JPG',
+    image: '/assets/sdg-3.jpg',
     imageAlt: 'Sustainability workshop in Japan',
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     hook: 'Could a campus marketplace make reusing student materials the easier choice?',
     summary:
       'Led a five-person team in building a student exchange MVP, prioritizing core features to turn an idea into a working product.',
-    image: '/assets/handitdown-2.png',
+    image: '/assets/handitdown-2.jpg',
     imageAlt: 'Hand It Down student exchange platform',
   },
 ]
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           <div className="hero-portrait">
-            <img src="/assets/headshot.png" alt="Kayla Garibay" />
+            <img src="/assets/headshot.jpg" alt="Kayla Garibay" />
           </div>
         </div>
       </section>
