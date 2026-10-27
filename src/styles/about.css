@@ -257,28 +257,36 @@
 
 /* Mobile-only vertical timeline */
 @media (max-width: 600px) {
+
   .about-bio {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
-
+  
   .about-carousel-wrap {
+    order: -1;
     width: 100%;
     align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   .about-carousel {
+    width: min(200px, 70vw);
+    height: min(200px, 70vw);
+    max-width: 100%;
     margin-inline: auto;
+    flex-shrink: 0;
   }
-
+  
   .bio-text {
+    order: 0;
     width: 100%;
     align-self: stretch;
   }
+  
 
   .timeline-scroll {
     overflow-x: visible;
