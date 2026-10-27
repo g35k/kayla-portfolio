@@ -274,8 +274,8 @@
   }
   
   .about-carousel {
-    width: min(200px, 70vw);
-    height: min(200px, 70vw);
+    width: min(300px, 70vw);
+    height: min(300px, 70vw);
     max-width: 100%;
     margin-inline: auto;
     flex-shrink: 0;
