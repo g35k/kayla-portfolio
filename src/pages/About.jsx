@@ -83,7 +83,7 @@ export default function About() {
           <p>I'm a recent Computer Science graduate from Sacramento State, and I love building software that is genuinely useful to the people who use it. That is what pulls me toward frontend engineering, product thinking, and accessibility: they all start with understanding who you're building for.</p>
           <p>My year at Yokohama National University as a U.S. Department of State Gilman Scholar took that mindset further. Adapting to a new academic environment built my independence and resilience, and working with classmates from around the world grew my Japanese and showed me how differently people can experience the same problem.</p>
           <p>Back home, hackathons became my favorite way to learn quickly. I've competed in four and won two, including Senso, a braille learning device my team built in 48 hours, and I'm happiest where creativity meets technical execution. I'm especially drawn to accessibility-focused products, where thoughtful design makes a real difference in someone's day.</p>
-          <a href="/assets/Kayla_Garibay_Resume.pdf" target="_blank" rel="noreferrer" className="resume-btn">
+          <a href="/assets/KaylaGaribay_PM.pdf" target="_blank" rel="noreferrer" className="resume-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
