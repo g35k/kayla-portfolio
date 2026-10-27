@@ -32,7 +32,14 @@
     --transition:  0.22s ease;
   }
   
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+  
+  body {
+    overflow-x: clip;
+  }
   
   body {
     font-family: var(--font-body);
@@ -49,8 +56,9 @@
   button { font-family: var(--font-body); }
   
   .container {
+    width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding-left:  max(32px, env(safe-area-inset-left,  0px));
-    padding-right: max(32px, env(safe-area-inset-right, 0px));
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
   }
