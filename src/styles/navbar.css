@@ -63,6 +63,21 @@
   }
   
   @media (max-width: 480px) {
-    .nav-pills { gap: 0.35rem; }
-    .nav-pill  { padding: 0.28rem 0.7rem; font-size: 0.72rem; }
+
+    .navbar-inner-wrap {
+      gap: 0.7rem;
+    }
+  
+    .navbar-logo {
+      font-size: 0.8rem;
+    }
+  
+    .nav-pills {
+      gap: 0.35rem;
+    }
+  
+    .nav-pill {
+      padding: 0.28rem 0.7rem;
+      font-size: 0.72rem;
+    }
   }

@@ -38,7 +38,7 @@
 
 /* Bottom middle, slightly left */
 .contact-blob3 {
-  bottom: -600px;
+  bottom: -500px;
   left: 32%;
   width: 460px;
   height: 400px;
@@ -222,4 +222,8 @@
   .contact-link-title {
     font-size: 1.4rem;
   }
+
+    .contact-blob3 {
+      display: none;
+    }
 }

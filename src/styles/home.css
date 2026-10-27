@@ -308,16 +308,18 @@
     line-height: 1.6;
   }
 
-  .hero-portrait {
-    flex: 0 1 140px;
-    width: 140px;
-    height: 175px;
-    max-width: 40%;
-    margin: 0;
-    overflow: hidden;
-    border: 1px solid rgba(44, 110, 73, 0.35);
-    border-radius: 12px;
-  }
+.hero-portrait {
+  flex: 0 1 140px;
+  width: 140px;
+  height: 175px;
+  max-width: 40%;
+  margin: 0; /* changed from 0 auto */
+  margin-left: 0;
+  margin-right: auto;
+  align-self: flex-start;
+  border: 1px solid rgba(44, 110, 73, 0.35);
+  border-radius: 12px;
+}
   
   .hero-portrait img {
     display: block;
