@@ -309,9 +309,9 @@
   }
   
 .hero-portrait {
-  flex: 0 0 580px;
-  width: 280px;
-  height: 580px;
+  flex: 0 0 348px;
+  width: 168px;
+  height: 348px;
   max-width: 100%;
   margin: 0;
   align-self: flex-start;
