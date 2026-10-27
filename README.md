@@ -1,16 +1,95 @@
-# React + Vite
+# Kayla Garibay | Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website showcasing my projects, technical skills, and background in computer science.
 
-Currently, two official plugins are available:
+**Live Site:** [kaylagaribay.com](https://kaylagaribay.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+I'm a computer science graduate from Sacramento State with an interest in frontend development, software engineering, and hardware. I built this portfolio to share my work, document what I've learned, and continue growing as a developer.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The site includes selected projects, information about my background, and ways to get in touch.
 
-## Expanding the Oxlint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **React** for building reusable UI components
+- **Vite** for development and production builds
+- **React Router** for client-side navigation
+- **CSS** for styling, responsive layouts, and visual effects
+- **Netlify** for deployment and hosting
+
+## Features
+
+- Responsive design for desktop and mobile
+- Project showcase with descriptions, technologies, and links
+- About page featuring my background and experience
+- Contact page with links and email-copy functionality
+- Client-side routing for navigation between pages
+- Custom visual styling and decorative elements
+
+## Getting Started
+
+To run the project locally:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <your-repository-url>
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd <repository-folder>
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL provided by Vite in your browser.
+
+### Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+The site is deployed through Netlify and uses a custom domain: [kaylagaribay.com](https://kaylagaribay.com).
+
+Client-side routes are configured to fall back to `index.html` so direct navigation and page refreshes work with React Router.
+
+## Contact
+
+- **Portfolio:** [kaylagaribay.com](https://kaylagaribay.com)
+- **LinkedIn:** [linkedin.com/in/kaylagaribay/](https://www.linkedin.com/in/kaylagaribay/)
+- **GitHub:** [github.com/g35k](https://github.com/g35k)
+
+---
+
+Built with curiosity, creativity, and a love of figuring out how things work.
