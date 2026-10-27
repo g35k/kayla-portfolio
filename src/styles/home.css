@@ -275,8 +275,71 @@
   background: var(--forest);
   transform: translateY(-2px);
 }
-
 @media (max-width: 700px) {
+  /* Hero section */
+  .hero {
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+    min-height: auto;
+  }
+
+  .hero-text {
+    flex: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    overflow-wrap: break-word;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-portrait {
+    flex: none;
+    width: min(100%, 280px);
+    height: auto;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .hero-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+
+  /* Decorative blobs */
+  .hero-blob1 {
+    width: 350px;
+    height: 350px;
+    top: 0;
+    right: -180px;
+  }
+
+  .hero-blob2 {
+    width: 350px;
+    height: 350px;
+    top: 650px;
+    right: auto;
+    left: -200px;
+  }
+
+  /* Featured work */
   .featured {
     padding-top: 3rem;
   }
@@ -322,4 +385,3 @@
     margin-top: 0.25rem;
   }
 }
-
